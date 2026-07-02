@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="リラク&エステ 浅草凛 — 东京浅草24小时营业的放松按摩沙龙。指压、淋巴精油按摩、足疗。完全单间、可淋浴。">
+  <title>浅草凛 | 东京浅草·24小时营业的按摩沙龙</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=Noto+Sans+JP:wght@300;400;500&family=Noto+Sans+SC:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../styles.css">
+</head>
+<body>
+  <header class="header" id="header">
+    <nav class="nav container">
+      <a href="../landing.html" class="logo">浅草凛</a>
+      <button class="nav-toggle" aria-label="打开菜单" aria-expanded="false">
+        <span></span>
+        <span></span>
+      </button>
+      <div class="nav-menu">
+        <ul class="nav-links">
+          <li><a href="#shiatsu">指压</a></li>
+          <li><a href="#oil">精油</a></li>
+          <li><a href="#foot">足疗</a></li>
+          <li><a href="#info">须知</a></li>
+          <li><a href="#visit">交通</a></li>
+        </ul>
+        <div class="lang-switch">
+          <a href="../cn/" class="active">中文</a>
+          <a href="../en/">EN</a>
+          <a href="../jp/">日本語</a>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero-carousel" id="heroCarousel">
+        <div class="hero-slide active" style="background-image: url(../assets/images/hero-main.webp);"></div>
+        <div class="hero-slide" style="background-image: url(../assets/images/service-oil.webp);"></div>
+        <div class="hero-slide" style="background-image: url(../assets/images/service-shiatsu.webp);"></div>
+        <div class="hero-slide" style="background-image: url(../assets/images/service-foot.webp);"></div>
+      </div>
+      <div class="hero-grid-overlay"></div>
+      <div class="hero-content container">
+        <p class="hero-tag">东京·浅草 | 24小时营业</p>
+        <h1>在浅草，随时享受<br>身心放松的疗愈时光。</h1>
+        <p class="hero-sub">指压、淋巴精油按摩、足疗。完全单间的私密空间，为您细心舒缓旅途与日常的疲惫。</p>
+        <a href="#shiatsu" class="btn btn-primary">查看项目</a>
+        <div class="hero-quick-nav">
+          <a href="#shiatsu" class="hero-nav-pill">指压</a>
+          <a href="#oil" class="hero-nav-pill">精油</a>
+          <a href="#foot" class="hero-nav-pill">足疗</a>
+          <a href="#visit" class="hero-nav-pill">交通</a>
+        </div>
+      </div>
+      <div class="hero-dots" id="heroDots">
+        <button class="hero-dot active" data-index="0" aria-label="Slide 1"></button>
+        <button class="hero-dot" data-index="1" aria-label="Slide 2"></button>
+        <button class="hero-dot" data-index="2" aria-label="Slide 3"></button>
+        <button class="hero-dot" data-index="3" aria-label="Slide 4"></button>
+      </div>
+      <div class="hero-scroll">
+        <span>Scroll</span>
+        <div class="scroll-line"></div>
+      </div>
+    </section>
+
+    <section class="intro section">
+      <div class="container intro-grid">
+        <div class="intro-text">
+          <p class="section-label">Welcome</p>
+          <h2>在浅草中心<br>重启身心状态</h2>
+          <p>浅草凛是一家24小时营业、全年无休的放松按摩沙龙。全部为完全单间，并可使用淋浴。无论是观光途中，还是深夜的疲惫时分，欢迎随时光临。</p>
+          <p class="intro-jp">采用预付制，各项目可自由组合。</p>
+        </div>
+        <div class="intro-features">
+          <div class="intro-promo-image">
+            <img src="../assets/images/interior-05.webp" alt="浅草凛 香薰精油" loading="lazy">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="services section" id="shiatsu">
+      <div class="container">
+        <header class="section-header">
+          <p class="section-label">指压</p>
+          <h2>指压按摩</h2>
+          <p class="section-sub">精准按压穴位，从深层缓解全身疲劳的正宗指压。</p>
+        </header>
+        <div class="service-grid">
+          <article class="service-card">
+            <div class="service-card-header">
+              <h3>指压 30分钟</h3>
+              <div class="price-group">
+                <p class="price">¥3,000</p>
+                <p class="price-sub">深夜 ¥4,000</p>
+              </div>
+            </div>
+            <p class="service-desc">短时间集中护理疲劳部位。</p>
+            <a href="../booking.html?service=Shiatsu%2030%20min" class="btn-booking">
+              <svg viewBox="0 0 24 24" width="18" height="18"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.884-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z" fill="currentColor"/></svg>
+              WhatsApp预约
+            </a>
+          </article>
+          <article class="service-card featured">
+            <span class="badge">推荐</span>
+            <div class="service-card-header">
+              <h3>指压 70分钟</h3>
+              <div class="price-group">
+                <p class="price">¥6,000</p>
+                <p class="price-sub">深夜 ¥7,000</p>
+              </div>
+            </div>
+            <p class="service-desc">均衡放松全身的人气项目。</p>
+            <a href="../booking.html?service=Shiatsu%2070%20min" class="btn-booking">
+              <svg viewBox="0 0 24 24" width="18" height="18"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.884-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z" fill="currentColor"/></svg>
+              WhatsApp预约
+            </a>
+          </article>
+          <article class="service-card featured">
+            <span class="badge">推荐</span>
+            <div class="service-card-header">
+              <h3>指压 90分钟</h3>
+              <div class="price-group">
+                <p class="price">¥8,000</p>
+                <p class="price-sub">深夜 ¥9,000</p>
+              </div>
+            </div>
+            <p class="service-desc">充分护理全身，深度放松。</p>
+            <a href="../booking.html?service=Shiatsu%2090%20min" class="btn-booking">
+              <svg viewBox="0 0 24 24" width="18" height="18"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.884-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z" fill="currentColor"/></svg>
+              WhatsApp预约
+            </a>
+          </article>
+          <article class="service-card">
+            <div class="service-card-header">
+              <h3>指压 120分钟</h3>
+              <div class="price-group">
+                <p class="price">¥10,000</p>
+                <p class="price-sub">深夜 ¥11,000</p>
+              </div>
+            </div>
+            <p class="service-desc">最长项目，彻底舒缓全身疲劳。</p>
+            <a href="../booking.html?service=Shiatsu%20120%20min" class="btn-booking">
+              <svg viewBox="0 0 24 24" width="18" height="18"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.884-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z" fill="currentColor"/></svg>
+              WhatsApp预约
+            </a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="services section section-alt" id="oil">
+      <div class="container">
+        <header class="section-header">
+          <p class="section-label">淋巴精油</p>
+          <h2>淋巴精油按摩</h2>
+          <p class="section-sub">顺着淋巴流向排出老废物质的精油护理。</p>
+        </header>
+        <div class="service-grid">
+          <article class="service-card">
+            <div class="service-card-header">
+              <h3>精油 30分钟</h3>
+              <div class="price-group">
+                <p class="price">¥4,000</p>
+                <p class="price-sub">深夜 ¥5,000</p>
+              </div>
+            </div>
+            <p class="service-desc">集中护理最需要放松的部位。</p>
+            <a href="../booking.html?service=Lymphatic%20Oil%2030%20min" class="btn-booking">
+              <svg viewBox="0 0 24 24" width="18" height="18"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.884-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z" fill="currentColor"/></svg>
+              WhatsApp预约
+            </a>
+          </article>
+          <article class="service-card">
+            <div class="service-card-header">
+              <h3>精油 60分钟</h3>
+              <div class="price-group">
+                <p class="price">¥8,000</p>
+                <p class="price-sub">深夜 ¥9,000</p>
+              </div>
+            </div>
+            <p class="service-desc">均衡疏通全身淋巴。</p>
+            <a href="../booking.html?service=Lymphatic%20Oil%2060%20min" class="btn-booking">
+              <svg viewBox="0 0 24 24" width="18" height="18"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.884-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z" fill="currentColor"/></svg>
+              WhatsApp预约
+            </a>
+          </article>
+          <article class="service-card featured">
+            <span class="badge">推荐</span>
+            <div class="service-card-header">
+              <h3>精油 90分钟</h3>
+              <div class="price-group">
+                <p class="price">¥11,000</p>
+                <p class="price-sub">深夜 ¥12,000</p>
+              </div>
+            </div>
+            <p class="service-desc">从容护理全身的人气之选。</p>
+            <a href="../booking.html?service=Lymphatic%20Oil%2090%20min" class="btn-booking">
+              <svg viewBox="0 0 24 24" width="18" height="18"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.884-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z" fill="currentColor"/></svg>
+              WhatsApp预约
+            </a>
+          </article>
+          <article class="service-card">
+            <div class="service-card-header">
+              <h3>精油 120分钟</h3>
+              <div class="price-group">
+                <p class="price">¥14,000</p>
+                <p class="price-sub">深夜 ¥17,000</p>
+              </div>
+            </div>
+            <p class="service-desc">奢享长时项目，极致放松体验。</p>
+            <a href="../booking.html?service=Lymphatic%20Oil%20120%20min" class="btn-booking">
+              <svg viewBox="0 0 24 24" width="18" height="18"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.884-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z" fill="currentColor"/></svg>
+              WhatsApp预约
+            </a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="services section" id="foot">
+      <div class="container">
+        <header class="section-header">
+          <p class="section-label">足疗</p>
+          <h2>足疗套餐</h2>
+          <p class="section-sub">足浴＋足底按摩＋小腿按摩的套餐项目。足浴加生姜免费。</p>
+        </header>
+        <div class="service-grid">
+          <article class="service-card">
+            <div class="service-card-header">
+              <h3>足疗 45分钟</h3>
+              <div class="price-group">
+                <p class="price">¥5,000</p>
+                <p class="price-sub">深夜 ¥6,000</p>
+              </div>
+            </div>
+            <ul class="includes">
+              <li>足浴</li>
+              <li>足底按摩</li>
+              <li>小腿按摩</li>
+            </ul>
+            <a href="../booking.html?service=Foot%20Course%2045%20min" class="btn-booking">
+              <svg viewBox="0 0 24 24" width="18" height="18"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.884-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z" fill="currentColor"/></svg>
+              WhatsApp预约
+            </a>
+          </article>
+          <article class="service-card featured">
+            <span class="badge">推荐</span>
+            <div class="service-card-header">
+              <h3>足疗 60分钟</h3>
+              <div class="price-group">
+                <p class="price">¥7,000</p>
+                <p class="price-sub">深夜 ¥8,000</p>
+              </div>
+            </div>
+            <ul class="includes">
+              <li>足浴（加生姜免费）</li>
+              <li>足底按摩</li>
+              <li>小腿按摩</li>
+            </ul>
+            <a href="../booking.html?service=Foot%20Course%2060%20min" class="btn-booking">
+              <svg viewBox="0 0 24 24" width="18" height="18"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.884-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z" fill="currentColor"/></svg>
+              WhatsApp预约
+            </a>
+          </article>
+          <article class="service-card">
+            <div class="service-card-header">
+              <h3>足疗 90分钟</h3>
+              <div class="price-group">
+                <p class="price">¥10,000</p>
+                <p class="price-sub">深夜 ¥11,000</p>
+              </div>
+            </div>
+            <ul class="includes">
+              <li>足浴（加生姜免费）</li>
+              <li>足底按摩</li>
+              <li>小腿按摩</li>
+            </ul>
+            <a href="../booking.html?service=Foot%20Course%2090%20min" class="btn-booking">
+              <svg viewBox="0 0 24 24" width="18" height="18"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.884-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z" fill="currentColor"/></svg>
+              WhatsApp预约
+            </a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="services section section-alt" id="info">
+      <div class="container">
+        <header class="section-header">
+          <p class="section-label">须知</p>
+          <h2>门店信息</h2>
+        </header>
+        <div class="service-grid">
+          <article class="service-card">
+            <div class="service-card-header">
+              <h3>营业时间</h3>
+            </div>
+            <ul class="includes">
+              <li>24小时营业·全年无休</li>
+              <li>日常价 7:00〜19:00</li>
+              <li>深夜价 19:00〜次日7:00</li>
+            </ul>
+          </article>
+          <article class="service-card">
+            <div class="service-card-header">
+              <h3>店内设施</h3>
+            </div>
+            <ul class="includes">
+              <li>完全单间（一人一室）</li>
+              <li>可使用淋浴</li>
+              <li>最多可同时接待4位客人</li>
+            </ul>
+          </article>
+          <article class="service-card">
+            <div class="service-card-header">
+              <h3>支付方式</h3>
+            </div>
+            <ul class="includes">
+              <li>预付制（按摩前付款）</li>
+              <li>现金</li>
+              <li>信用卡 VISA·Mastercard·JCB·AMEX（手续费10%）</li>
+              <li>微信支付·支付宝</li>
+            </ul>
+          </article>
+          <article class="service-card">
+            <div class="service-card-header">
+              <h3>项目说明</h3>
+            </div>
+            <ul class="includes">
+              <li>各项目可自由组合</li>
+              <li>足浴加生姜免费</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="env-carousel-section" aria-label="店内环境">
+      <div class="container">
+        <header class="section-header">
+          <p class="section-label">Gallery</p>
+          <h2>店内环境与服务</h2>
+        </header>
+        <div class="env-carousel" id="envCarousel">
+          <div class="env-carousel-track" id="envTrack">
+            <div class="env-carousel-slide">
+              <img src="../assets/images/interior-02.webp" alt="浅草凛 完全单间" loading="lazy">
+            </div>
+            <div class="env-carousel-slide">
+              <img src="../assets/images/interior-05.webp" alt="浅草凛 香薰精油" loading="lazy">
+            </div>
+            <div class="env-carousel-slide">
+              <img src="../assets/images/service-shiatsu.webp" alt="浅草凛 指压按摩" loading="lazy">
+            </div>
+            <div class="env-carousel-slide">
+              <img src="../assets/images/service-oil.webp" alt="浅草凛 精油按摩" loading="lazy">
+            </div>
+            <div class="env-carousel-slide">
+              <img src="../assets/images/service-ashifumi.webp" alt="浅草凛 踩背按摩" loading="lazy">
+            </div>
+            <div class="env-carousel-slide">
+              <img src="../assets/images/service-foot.webp" alt="浅草凛 足底按摩" loading="lazy">
+            </div>
+          </div>
+        </div>
+        <div class="env-carousel-nav">
+          <button class="env-carousel-btn" id="envPrev" aria-label="上一张">&larr;</button>
+          <div class="env-dots" id="envDots"></div>
+          <button class="env-carousel-btn" id="envNext" aria-label="下一张">&rarr;</button>
+        </div>
+      </div>
+    </section>
+
+    <section class="visit section" id="visit">
+      <div class="container visit-grid">
+        <div class="visit-info">
+          <p class="section-label">Access</p>
+          <h2>リラク&エステ 浅草凛</h2>
+          <div class="visit-details">
+            <div class="visit-item">
+              <h4>地址</h4>
+              <p>〒111-0035<br>东京都台东区西浅草3丁目1-10<br>第105新井大楼 6F</p>
+            </div>
+            <div class="visit-item">
+              <h4>营业时间</h4>
+              <p>24小时营业·全年无休<br>（深夜价 19:00〜次日7:00）</p>
+            </div>
+            <div class="visit-item">
+              <h4>电话</h4>
+              <p><a href="tel:+817091752277">+81 70-9175-2277</a></p>
+            </div>
+            <div class="visit-item">
+              <h4>邮箱</h4>
+              <p><a href="mailto:3227920672@qq.com">3227920672@qq.com</a></p>
+            </div>
+          </div>
+          <a href="https://maps.app.goo.gl/Jw2w2UrL9ZcUfHQM8" target="_blank" rel="noopener noreferrer" class="btn btn-outline">在谷歌地图中打开</a>
+        </div>
+        <div class="visit-map">
+          <iframe
+            title="浅草凛 地图"
+            src="https://www.google.com/maps?q=%E6%9D%B1%E4%BA%AC%E9%83%BD%E5%8F%B0%E6%9D%B1%E5%8C%BA%E8%A5%BF%E6%B5%85%E8%8D%893-1-10&output=embed"
+            width="100%"
+            height="100%"
+            style="border:0;"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade">
+          </iframe>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-inner">
+      <span class="logo">浅草凛</span>
+      <p class="footer-tagline">在浅草，随时享受身心放松的疗愈时光。</p>
+      <p class="footer-copy">&copy; Asakusa Rin. All rights reserved.</p>
+      <p class="footer-powered">Powered by <a href="https://reserveinjp.com/" target="_blank" rel="noopener">reserveinjp.</a></p>
+    </div>
+  </footer>
+
+<button class="back-to-top" id="backToTop" aria-label="回到顶部" title="回到顶部">&uarr;</button>
+  <script src="../script.js"></script>
+</body>
+</html>

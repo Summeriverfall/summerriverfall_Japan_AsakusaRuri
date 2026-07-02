@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Relax &amp; Esthetic Asakusa Rin — 24-hour relaxation salon in Asakusa, Tokyo. Shiatsu, lymphatic oil massage &amp; foot care. Private rooms, shower available.">
+  <title>Asakusa Rin | 24-Hour Relaxation Salon in Asakusa, Tokyo</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=Noto+Sans+JP:wght@300;400;500&family=Noto+Sans+SC:wght@300;400;500&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../styles.css">
+</head>
+<body>
+  <header class="header" id="header">
+    <nav class="nav container">
+      <a href="../landing.html" class="logo">浅草凛</a>
+      <button class="nav-toggle" aria-label="Open menu" aria-expanded="false">
+        <span></span>
+        <span></span>
+      </button>
+      <div class="nav-menu">
+        <ul class="nav-links">
+          <li><a href="#shiatsu">Shiatsu</a></li>
+          <li><a href="#oil">Oil</a></li>
+          <li><a href="#foot">Foot Care</a></li>
+          <li><a href="#info">Info</a></li>
+          <li><a href="#visit">Access</a></li>
+        </ul>
+        <div class="lang-switch">
+          <a href="../cn/">中文</a>
+          <a href="../en/" class="active">EN</a>
+          <a href="../jp/">日本語</a>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero-carousel" id="heroCarousel">
+        <div class="hero-slide active" style="background-image: url(../assets/images/hero-main.webp);"></div>
+        <div class="hero-slide" style="background-image: url(../assets/images/service-oil.webp);"></div>
+        <div class="hero-slide" style="background-image: url(../assets/images/service-shiatsu.webp);"></div>
+        <div class="hero-slide" style="background-image: url(../assets/images/service-foot.webp);"></div>
+      </div>
+      <div class="hero-grid-overlay"></div>
+      <div class="hero-content container">
+        <p class="hero-tag">Asakusa, Tokyo | Open 24 Hours</p>
+        <h1>Healing in Asakusa,<br>any time of day or night.</h1>
+        <p class="hero-sub">Shiatsu, lymphatic oil massage &amp; foot care. Melt away the fatigue of travel and everyday life in a fully private room.</p>
+        <a href="#shiatsu" class="btn btn-primary">View Courses</a>
+        <div class="hero-quick-nav">
+          <a href="#shiatsu" class="hero-nav-pill">Shiatsu</a>
+          <a href="#oil" class="hero-nav-pill">Oil</a>
+          <a href="#foot" class="hero-nav-pill">Foot Care</a>
+          <a href="#visit" class="hero-nav-pill">Access</a>
+        </div>
+      </div>
+      <div class="hero-dots" id="heroDots">
+        <button class="hero-dot active" data-index="0" aria-label="Slide 1"></button>
+        <button class="hero-dot" data-index="1" aria-label="Slide 2"></button>
+        <button class="hero-dot" data-index="2" aria-label="Slide 3"></button>
+        <button class="hero-dot" data-index="3" aria-label="Slide 4"></button>
+      </div>
+      <div class="hero-scroll">
+        <span>Scroll</span>
+        <div class="scroll-line"></div>
+      </div>
+    </section>
+
+    <section class="intro section">
+      <div class="container intro-grid">
+        <div class="intro-text">
+          <p class="section-label">Welcome</p>
+          <h2>Reset your body and mind<br>in the heart of Asakusa</h2>
+          <p>Asakusa Rin is a relaxation salon open 24 hours a day, 365 days a year. All treatments are given in fully private rooms, and a shower is available. Drop by between sightseeing stops — or in the middle of the night.</p>
+          <p class="intro-jp">Payment in advance. Courses can be freely combined.</p>
+        </div>
+        <div class="intro-features">
+          <div class="intro-promo-image">
+            <img src="../assets/images/interior-05.webp" alt="Asakusa Rin aroma oils" loading="lazy">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="services section" id="shiatsu">
+      <div class="container">
+        <header class="section-header">
+          <p class="section-label">Shiatsu</p>
+          <h2>Shiatsu Massage</h2>
+          <p class="section-sub">Authentic pressure-point massage that releases fatigue from deep within the whole body.</p>
+        </header>
+        <div class="service-grid">
+          <article class="service-card">
+            <div class="service-card-header">
+              <h3>Shiatsu 30 min</h3>
+              <div class="price-group">
+                <p class="price">¥3,000</p>
+                <p class="price-sub">Late night ¥4,000</p>
+              </div>
+            </div>
+            <p class="service-desc">Focused care for tired spots in a short session.</p>
+            <a href="../booking.html?service=Shiatsu%2030%20min" class="btn-booking">
+              <svg viewBox="0 0 24 24" width="18" height="18"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.884-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z" fill="currentColor"/></svg>
+              Book via WhatsApp
+            </a>
+          </article>
+          <article class="service-card featured">
+            <span class="badge">Recommended</span>
+            <div class="service-card-header">
+              <h3>Shiatsu 70 min</h3>
+              <div class="price-group">
+                <p class="price">¥6,000</p>
+                <p class="price-sub">Late night ¥7,000</p>
+              </div>
+            </div>
+            <p class="service-desc">A popular course that loosens the whole body evenly.</p>
+            <a href="../booking.html?service=Shiatsu%2070%20min" class="btn-booking">
+              <svg viewBox="0 0 24 24" width="18" height="18"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.884-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z" fill="currentColor"/></svg>
+              Book via WhatsApp
+            </a>
+          </article>
+          <article class="service-card featured">
+            <span class="badge">Recommended</span>
+            <div class="service-card-header">
+              <h3>Shiatsu 90 min</h3>
+              <div class="price-group">
+                <p class="price">¥8,000</p>
+                <p class="price-sub">Late night ¥9,000</p>
+              </div>
+            </div>
+            <p class="service-desc">Thorough full-body care for deep relaxation.</p>
+            <a href="../booking.html?service=Shiatsu%2090%20min" class="btn-booking">
+              <svg viewBox="0 0 24 24" width="18" height="18"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.884-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z" fill="currentColor"/></svg>
+              Book via WhatsApp
+            </a>
+          </article>
+          <article class="service-card">
+            <div class="service-card-header">
+              <h3>Shiatsu 120 min</h3>
+              <div class="price-group">
+                <p class="price">¥10,000</p>
+                <p class="price-sub">Late night ¥11,000</p>
+              </div>
+            </div>
+            <p class="service-desc">Our longest course — complete care for whole-body fatigue.</p>
+            <a href="../booking.html?service=Shiatsu%20120%20min" class="btn-booking">
+              <svg viewBox="0 0 24 24" width="18" height="18"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.884-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z" fill="currentColor"/></svg>
+              Book via WhatsApp
+            </a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="services section section-alt" id="oil">
+      <div class="container">
+        <header class="section-header">
+          <p class="section-label">Lymphatic Oil</p>
+          <h2>Lymphatic Oil Massage</h2>
+          <p class="section-sub">An oil treatment that follows the flow of your lymph to flush away waste and swelling.</p>
+        </header>
+        <div class="service-grid">
+          <article class="service-card">
+            <div class="service-card-header">
+              <h3>Oil 30 min</h3>
+              <div class="price-group">
+                <p class="price">¥4,000</p>
+                <p class="price-sub">Late night ¥5,000</p>
+              </div>
+            </div>
+            <p class="service-desc">A focused treatment for the areas that need it most.</p>
+            <a href="../booking.html?service=Lymphatic%20Oil%2030%20min" class="btn-booking">
+              <svg viewBox="0 0 24 24" width="18" height="18"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.884-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z" fill="currentColor"/></svg>
+              Book via WhatsApp
+            </a>
+          </article>
+          <article class="service-card">
+            <div class="service-card-header">
+              <h3>Oil 60 min</h3>
+              <div class="price-group">
+                <p class="price">¥8,000</p>
+                <p class="price-sub">Late night ¥9,000</p>
+              </div>
+            </div>
+            <p class="service-desc">Balanced lymphatic drainage for the whole body.</p>
+            <a href="../booking.html?service=Lymphatic%20Oil%2060%20min" class="btn-booking">
+              <svg viewBox="0 0 24 24" width="18" height="18"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.884-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z" fill="currentColor"/></svg>
+              Book via WhatsApp
+            </a>
+          </article>
+          <article class="service-card featured">
+            <span class="badge">Recommended</span>
+            <div class="service-card-header">
+              <h3>Oil 90 min</h3>
+              <div class="price-group">
+                <p class="price">¥11,000</p>
+                <p class="price-sub">Late night ¥12,000</p>
+              </div>
+            </div>
+            <p class="service-desc">Our most popular course — the whole body, unhurried.</p>
+            <a href="../booking.html?service=Lymphatic%20Oil%2090%20min" class="btn-booking">
+              <svg viewBox="0 0 24 24" width="18" height="18"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.884-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z" fill="currentColor"/></svg>
+              Book via WhatsApp
+            </a>
+          </article>
+          <article class="service-card">
+            <div class="service-card-header">
+              <h3>Oil 120 min</h3>
+              <div class="price-group">
+                <p class="price">¥14,000</p>
+                <p class="price-sub">Late night ¥17,000</p>
+              </div>
+            </div>
+            <p class="service-desc">A luxurious long course for the ultimate relaxation.</p>
+            <a href="../booking.html?service=Lymphatic%20Oil%20120%20min" class="btn-booking">
+              <svg viewBox="0 0 24 24" width="18" height="18"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.884-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z" fill="currentColor"/></svg>
+              Book via WhatsApp
+            </a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="services section" id="foot">
+      <div class="container">
+        <header class="section-header">
+          <p class="section-label">Foot Care</p>
+          <h2>Foot Care Course</h2>
+          <p class="section-sub">A set course of foot bath + foot reflexology + calf massage. Adding ginger to the foot bath is free.</p>
+        </header>
+        <div class="service-grid">
+          <article class="service-card">
+            <div class="service-card-header">
+              <h3>Foot Course 45 min</h3>
+              <div class="price-group">
+                <p class="price">¥5,000</p>
+                <p class="price-sub">Late night ¥6,000</p>
+              </div>
+            </div>
+            <ul class="includes">
+              <li>Foot bath</li>
+              <li>Foot reflexology</li>
+              <li>Calf massage</li>
+            </ul>
+            <a href="../booking.html?service=Foot%20Course%2045%20min" class="btn-booking">
+              <svg viewBox="0 0 24 24" width="18" height="18"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.884-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z" fill="currentColor"/></svg>
+              Book via WhatsApp
+            </a>
+          </article>
+          <article class="service-card featured">
+            <span class="badge">Recommended</span>
+            <div class="service-card-header">
+              <h3>Foot Course 60 min</h3>
+              <div class="price-group">
+                <p class="price">¥7,000</p>
+                <p class="price-sub">Late night ¥8,000</p>
+              </div>
+            </div>
+            <ul class="includes">
+              <li>Foot bath (free ginger)</li>
+              <li>Foot reflexology</li>
+              <li>Calf massage</li>
+            </ul>
+            <a href="../booking.html?service=Foot%20Course%2060%20min" class="btn-booking">
+              <svg viewBox="0 0 24 24" width="18" height="18"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.884-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z" fill="currentColor"/></svg>
+              Book via WhatsApp
+            </a>
+          </article>
+          <article class="service-card">
+            <div class="service-card-header">
+              <h3>Foot Course 90 min</h3>
+              <div class="price-group">
+                <p class="price">¥10,000</p>
+                <p class="price-sub">Late night ¥11,000</p>
+              </div>
+            </div>
+            <ul class="includes">
+              <li>Foot bath (free ginger)</li>
+              <li>Foot reflexology</li>
+              <li>Calf massage</li>
+            </ul>
+            <a href="../booking.html?service=Foot%20Course%2090%20min" class="btn-booking">
+              <svg viewBox="0 0 24 24" width="18" height="18"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.884-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z" fill="currentColor"/></svg>
+              Book via WhatsApp
+            </a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="services section section-alt" id="info">
+      <div class="container">
+        <header class="section-header">
+          <p class="section-label">Info</p>
+          <h2>Store Information</h2>
+        </header>
+        <div class="service-grid">
+          <article class="service-card">
+            <div class="service-card-header">
+              <h3>Opening Hours</h3>
+            </div>
+            <ul class="includes">
+              <li>Open 24 hours, every day</li>
+              <li>Regular rates 7:00 – 19:00</li>
+              <li>Late-night rates 19:00 – 7:00</li>
+            </ul>
+          </article>
+          <article class="service-card">
+            <div class="service-card-header">
+              <h3>Facilities</h3>
+            </div>
+            <ul class="includes">
+              <li>Fully private single rooms</li>
+              <li>Shower available</li>
+              <li>Up to 4 guests at the same time</li>
+            </ul>
+          </article>
+          <article class="service-card">
+            <div class="service-card-header">
+              <h3>Payment</h3>
+            </div>
+            <ul class="includes">
+              <li>Payment required in advance</li>
+              <li>Cash</li>
+              <li>Credit cards VISA / Mastercard / JCB / AMEX (10% fee)</li>
+              <li>WeChat Pay / Alipay</li>
+            </ul>
+          </article>
+          <article class="service-card">
+            <div class="service-card-header">
+              <h3>Courses</h3>
+            </div>
+            <ul class="includes">
+              <li>Courses can be freely combined</li>
+              <li>Free ginger for the foot bath</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="env-carousel-section" aria-label="Salon environment">
+      <div class="container">
+        <header class="section-header">
+          <p class="section-label">Gallery</p>
+          <h2>Our Space &amp; Care</h2>
+        </header>
+        <div class="env-carousel" id="envCarousel">
+          <div class="env-carousel-track" id="envTrack">
+            <div class="env-carousel-slide">
+              <img src="../assets/images/interior-02.webp" alt="Asakusa Rin private room" loading="lazy">
+            </div>
+            <div class="env-carousel-slide">
+              <img src="../assets/images/interior-05.webp" alt="Asakusa Rin aroma oils" loading="lazy">
+            </div>
+            <div class="env-carousel-slide">
+              <img src="../assets/images/service-shiatsu.webp" alt="Asakusa Rin shiatsu massage" loading="lazy">
+            </div>
+            <div class="env-carousel-slide">
+              <img src="../assets/images/service-oil.webp" alt="Asakusa Rin oil massage" loading="lazy">
+            </div>
+            <div class="env-carousel-slide">
+              <img src="../assets/images/service-ashifumi.webp" alt="Asakusa Rin ashiatsu massage" loading="lazy">
+            </div>
+            <div class="env-carousel-slide">
+              <img src="../assets/images/service-foot.webp" alt="Asakusa Rin foot reflexology" loading="lazy">
+            </div>
+          </div>
+        </div>
+        <div class="env-carousel-nav">
+          <button class="env-carousel-btn" id="envPrev" aria-label="Previous slide">&larr;</button>
+          <div class="env-dots" id="envDots"></div>
+          <button class="env-carousel-btn" id="envNext" aria-label="Next slide">&rarr;</button>
+        </div>
+      </div>
+    </section>
+
+    <section class="visit section" id="visit">
+      <div class="container visit-grid">
+        <div class="visit-info">
+          <p class="section-label">Access</p>
+          <h2>Relax &amp; Esthetic Asakusa Rin</h2>
+          <div class="visit-details">
+            <div class="visit-item">
+              <h4>Address</h4>
+              <p>3-1-10 Nishiasakusa, Taito City, Tokyo 111-0035<br>Dai-105 Arai Building 6F</p>
+            </div>
+            <div class="visit-item">
+              <h4>Opening Hours</h4>
+              <p>Open 24 hours, every day<br>(Late-night rates 19:00 – 7:00)</p>
+            </div>
+            <div class="visit-item">
+              <h4>Phone</h4>
+              <p><a href="tel:+817091752277">+81 70-9175-2277</a></p>
+            </div>
+            <div class="visit-item">
+              <h4>Email</h4>
+              <p><a href="mailto:3227920672@qq.com">3227920672@qq.com</a></p>
+            </div>
+          </div>
+          <a href="https://maps.app.goo.gl/Jw2w2UrL9ZcUfHQM8" target="_blank" rel="noopener noreferrer" class="btn btn-outline">Open in Google Maps</a>
+        </div>
+        <div class="visit-map">
+          <iframe
+            title="Asakusa Rin map"
+            src="https://www.google.com/maps?q=%E6%9D%B1%E4%BA%AC%E9%83%BD%E5%8F%B0%E6%9D%B1%E5%8C%BA%E8%A5%BF%E6%B5%85%E8%8D%893-1-10&output=embed"
+            width="100%"
+            height="100%"
+            style="border:0;"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade">
+          </iframe>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-inner">
+      <span class="logo">浅草凛</span>
+      <p class="footer-tagline">Healing in Asakusa, any time of day or night.</p>
+      <p class="footer-copy">&copy; Asakusa Rin. All rights reserved.</p>
+      <p class="footer-powered">Powered by <a href="https://reserveinjp.com/" target="_blank" rel="noopener">reserveinjp.</a></p>
+    </div>
+  </footer>
+
+<button class="back-to-top" id="backToTop" aria-label="Back to top" title="Back to top">&uarr;</button>
+  <script src="../script.js"></script>
+</body>
+</html>
