@@ -314,6 +314,14 @@ html[lang="zh-CN"] .logo {
   font-family: var(--font-body);
 }
 
+/* Balance centered blurbs so the last line never holds a lone character */
+.hero-sub,
+.section-sub,
+.hero h1,
+.section-header h2 {
+  text-wrap: balance;
+}
+
 .hero-sub {
   font-size: clamp(0.875rem, 2vw, 1rem);
   color: var(--charcoal-light);
@@ -785,6 +793,19 @@ html[lang="zh-CN"] .logo {
 .service-card-wide {
   max-width: 640px;
   margin-inline: auto;
+}
+
+.service-photo {
+  max-width: 640px;
+  margin: 0 auto var(--space-lg);
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.service-photo img {
+  width: 100%;
+  height: auto;
+  display: block;
 }
 
 /* ---- Visit ---- */
