@@ -665,15 +665,16 @@ html[lang="zh-CN"] .logo {
 }
 
 .price {
-  font-family: var(--font-display);
-  font-size: 1.25rem;
+  font-family: var(--font-body);
+  font-weight: 500;
+  font-size: 1.125rem;
   color: var(--gold);
   letter-spacing: 0.02em;
 }
 
 .price-sub {
-  font-family: var(--font-display);
-  font-size: 0.9375rem;
+  font-family: var(--font-body);
+  font-size: 0.875rem;
   color: var(--charcoal-light);
   margin-top: 0.125rem;
 }
