@@ -308,6 +308,12 @@ html[lang="zh-CN"] .logo {
   margin-bottom: var(--space-md);
 }
 
+/* CJK pages: use the body font so digits match the surrounding sans glyphs */
+.hero h1:lang(ja),
+.hero h1:lang(zh-CN) {
+  font-family: var(--font-body);
+}
+
 .hero-sub {
   font-size: clamp(0.875rem, 2vw, 1rem);
   color: var(--charcoal-light);
@@ -966,7 +972,7 @@ html[lang="zh-CN"] .logo {
 
   /* Keep each heading line on one row — no single-character orphan lines */
   .hero h1 {
-    font-size: clamp(1.5rem, 7.5vw, 2.5rem);
+    font-size: clamp(1.5rem, 7vw, 2.5rem);
     letter-spacing: 0;
   }
 
