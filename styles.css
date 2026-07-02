@@ -796,16 +796,28 @@ html[lang="zh-CN"] .logo {
 }
 
 .service-photo {
-  max-width: 640px;
-  margin: 0 auto var(--space-lg);
+  margin: 0 0 var(--space-xl);
   border-radius: 12px;
   overflow: hidden;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.06);
 }
 
 .service-photo img {
   width: 100%;
-  height: auto;
+  aspect-ratio: 21 / 9;
+  object-fit: cover;
   display: block;
+  transition: transform 0.6s ease;
+}
+
+.service-photo img:hover {
+  transform: scale(1.02);
+}
+
+@media (max-width: 640px) {
+  .service-photo img {
+    aspect-ratio: 16 / 10;
+  }
 }
 
 /* ---- Visit ---- */
