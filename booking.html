@@ -302,21 +302,25 @@
           <select id="service" name="service" class="form-select" required>
             <option value="">Select a course</option>
             <optgroup label="Shiatsu Massage">
-              <option value="Shiatsu 30 min">Shiatsu 30 min — ¥3,000 (late night ¥4,000)</option>
-              <option value="Shiatsu 70 min">Shiatsu 70 min — ¥6,000 (late night ¥7,000)</option>
-              <option value="Shiatsu 90 min">Shiatsu 90 min — ¥8,000 (late night ¥9,000)</option>
-              <option value="Shiatsu 120 min">Shiatsu 120 min — ¥10,000 (late night ¥11,000)</option>
+              <option value="Shiatsu 30 min">Shiatsu 30 min — ¥4,000</option>
+              <option value="Shiatsu 60 min">Shiatsu 60 min — ¥8,000</option>
             </optgroup>
-            <optgroup label="Lymphatic Oil Massage">
-              <option value="Lymphatic Oil 30 min">Lymphatic Oil 30 min — ¥4,000 (late night ¥5,000)</option>
-              <option value="Lymphatic Oil 60 min">Lymphatic Oil 60 min — ¥8,000 (late night ¥9,000)</option>
-              <option value="Lymphatic Oil 90 min">Lymphatic Oil 90 min — ¥11,000 (late night ¥12,000)</option>
-              <option value="Lymphatic Oil 120 min">Lymphatic Oil 120 min — ¥14,000 (late night ¥17,000)</option>
+            <optgroup label="Body Wash &amp; Scrub">
+              <option value="Bubble Body Wash 30 min">Bubble Body Wash 30 min — ¥5,000</option>
+              <option value="Body Scrub or Aroma Lymphatic 30 min">Body Scrub or Aroma Lymphatic 30 min — ¥5,500</option>
+              <option value="Body Scrub or Aroma Lymphatic 40 min">Body Scrub or Aroma Lymphatic 40 min — ¥6,600</option>
+              <option value="Body Scrub or Aroma Lymphatic 60 min">Body Scrub or Aroma Lymphatic 60 min — ¥8,800</option>
             </optgroup>
-            <optgroup label="Foot Care Course">
-              <option value="Foot Course 45 min">Foot Course 45 min — ¥5,000 (late night ¥6,000)</option>
-              <option value="Foot Course 60 min">Foot Course 60 min — ¥7,000 (late night ¥8,000)</option>
-              <option value="Foot Course 90 min">Foot Course 90 min — ¥10,000 (late night ¥11,000)</option>
+            <optgroup label="Popular Course (Body wash or scrub + Aroma lymphatic + Shower)">
+              <option value="Popular Course 60 min">Popular Course 60 min — ¥12,000</option>
+              <option value="Popular Course 90 min">Popular Course 90 min — ¥17,000</option>
+              <option value="Popular Course 120 min">Popular Course 120 min — ¥23,000</option>
+            </optgroup>
+            <optgroup label="Recommended Course (Scrub + Body wash + Aroma lymphatic + Shower + Nail clipping)">
+              <option value="Recommended Course 40 min">Recommended Course 40 min — ¥12,000</option>
+              <option value="Recommended Course 70 min">Recommended Course 70 min — ¥18,000</option>
+              <option value="Recommended Course 90 min">Recommended Course 90 min — ¥22,000</option>
+              <option value="Recommended Course 130 min">Recommended Course 130 min — ¥28,000</option>
             </optgroup>
           </select>
           <div class="form-error">Please select a course</div>
@@ -331,7 +335,7 @@
         <div class="form-group" id="timeGroup">
           <label for="time" class="form-label">Time *</label>
           <input type="time" id="time" name="time" class="form-input" required>
-          <div class="form-hint">Open 24 hours. Late-night rates apply from 19:00 to 7:00.</div>
+          <div class="form-hint">Open 24 hours, every day.</div>
           <div class="form-error">Please select a time</div>
         </div>
 
@@ -381,17 +385,19 @@
     const WHATSAPP_NUMBER = '817091752277';
 
     var serviceInfo = {
-      'Shiatsu 30 min': { day: 3000, night: 4000 },
-      'Shiatsu 70 min': { day: 6000, night: 7000 },
-      'Shiatsu 90 min': { day: 8000, night: 9000 },
-      'Shiatsu 120 min': { day: 10000, night: 11000 },
-      'Lymphatic Oil 30 min': { day: 4000, night: 5000 },
-      'Lymphatic Oil 60 min': { day: 8000, night: 9000 },
-      'Lymphatic Oil 90 min': { day: 11000, night: 12000 },
-      'Lymphatic Oil 120 min': { day: 14000, night: 17000 },
-      'Foot Course 45 min': { day: 5000, night: 6000 },
-      'Foot Course 60 min': { day: 7000, night: 8000 },
-      'Foot Course 90 min': { day: 10000, night: 11000 }
+      'Shiatsu 30 min': { price: 4000 },
+      'Shiatsu 60 min': { price: 8000 },
+      'Bubble Body Wash 30 min': { price: 5000 },
+      'Body Scrub or Aroma Lymphatic 30 min': { price: 5500 },
+      'Body Scrub or Aroma Lymphatic 40 min': { price: 6600 },
+      'Body Scrub or Aroma Lymphatic 60 min': { price: 8800 },
+      'Popular Course 60 min': { price: 12000 },
+      'Popular Course 90 min': { price: 17000 },
+      'Popular Course 120 min': { price: 23000 },
+      'Recommended Course 40 min': { price: 12000 },
+      'Recommended Course 70 min': { price: 18000 },
+      'Recommended Course 90 min': { price: 22000 },
+      'Recommended Course 130 min': { price: 28000 }
     };
 
     var serviceOptionsHTML = document.getElementById('service').innerHTML;
@@ -414,18 +420,6 @@
         }
       }
     })();
-
-    // Late-night rates apply from 19:00 to 7:00
-    function isNightTime(timeString) {
-      var hour = parseInt(timeString.split(':')[0]);
-      return hour >= 19 || hour < 7;
-    }
-
-    function servicePrice(service, night) {
-      var info = serviceInfo[service];
-      if (!info) return 0;
-      return night ? info.night : info.day;
-    }
 
     // Guests change → update additional services
     document.getElementById('guests').addEventListener('change', updateAdditionalServices);
@@ -509,21 +503,18 @@
 
     function buildWhatsAppMessage(formData) {
       var name = formData.get('name');
-      var rawTime = formData.get('time');
       var date = formatDate(formData.get('date'));
-      var time = formatTime(rawTime);
+      var time = formatTime(formData.get('time'));
       var guests = formData.get('guests');
       var mainService = formData.get('service');
-      var night = isNightTime(rawTime);
-      var rateLabel = night ? ' [late-night rate]' : '';
-      var mainPrice = servicePrice(mainService, night);
+      var mainInfo = serviceInfo[mainService] || { price: 0 };
 
       var message = 'Hello, I would like to make a reservation at Asakusa Rin.\n\n';
       message += 'Name: ' + name + '\n';
       message += 'Date: ' + date + '\n';
-      message += 'Time: ' + time + rateLabel + '\n';
+      message += 'Time: ' + time + '\n';
       message += 'Number of Guests: ' + guests + '\n';
-      message += 'Main Guest: ' + mainService + ' (¥' + mainPrice.toLocaleString() + ')\n';
+      message += 'Main Guest: ' + mainService + ' (¥' + mainInfo.price.toLocaleString() + ')\n';
 
       var guestCount = parseInt(guests);
       var samePackage = formData.get('samePackage') === 'on';
@@ -534,19 +525,21 @@
         for (var i = 1; i < guestCount; i++) {
           var gs = formData.get('guest' + i + 'Service');
           if (gs && gs.trim()) {
-            message += 'Guest ' + (i + 1) + ': ' + gs + ' (¥' + servicePrice(gs, night).toLocaleString() + ')\n';
+            var gInfo = serviceInfo[gs] || { price: 0 };
+            message += 'Guest ' + (i + 1) + ': ' + gs + ' (¥' + gInfo.price.toLocaleString() + ')\n';
           }
         }
       }
 
-      var total = mainPrice;
+      var total = mainInfo.price;
       if (samePackage) {
-        total = mainPrice * guestCount;
+        total = mainInfo.price * guestCount;
       } else {
         for (var j = 1; j < guestCount; j++) {
           var gs2 = formData.get('guest' + j + 'Service');
           if (gs2 && gs2.trim()) {
-            total += servicePrice(gs2, night);
+            var gInfo2 = serviceInfo[gs2] || { price: 0 };
+            total += gInfo2.price;
           }
         }
       }
