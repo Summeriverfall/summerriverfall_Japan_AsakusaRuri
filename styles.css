@@ -850,6 +850,10 @@ html[lang="zh-CN"] .logo {
   min-width: 0;
 }
 
+.visit-info {
+  text-align: center;
+}
+
 .visit-details {
   display: flex;
   flex-direction: column;
