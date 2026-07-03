@@ -795,34 +795,6 @@ html[lang="zh-CN"] .logo {
   margin-inline: auto;
 }
 
-.price-list {
-  border-top: 1px solid rgba(184, 149, 107, 0.25);
-  margin-bottom: var(--space-md);
-}
-
-.price-list a {
-  display: flex;
-  justify-content: space-between;
-  align-items: baseline;
-  gap: 1rem;
-  padding: 0.75rem 0.25rem;
-  border-bottom: 1px solid rgba(184, 149, 107, 0.25);
-  font-size: 0.95rem;
-  color: var(--charcoal);
-  transition: background 0.3s, padding 0.3s;
-}
-
-.price-list a:hover {
-  background: var(--cream);
-  padding-inline: 0.6rem;
-}
-
-.price-list .amount {
-  font-weight: 500;
-  color: var(--gold);
-  white-space: nowrap;
-}
-
 .service-photo {
   margin: 0 0 var(--space-xl);
   border-radius: 12px;
