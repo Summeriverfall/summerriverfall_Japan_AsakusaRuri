@@ -160,6 +160,19 @@
   style.textContent = ".visible { opacity: 1 !important; transform: translateY(0) !important; }";
   document.head.appendChild(style);
 
+  /* ---- option-card sync: booking link follows selected duration ---- */
+  document.querySelectorAll('.service-card').forEach(function (card) {
+    var radios = card.querySelectorAll('.opt-row input[type="radio"]');
+    var btn = card.querySelector('.btn-booking');
+    if (!radios.length || !btn) return;
+    function sync() {
+      var sel = card.querySelector('.opt-row input[type="radio"]:checked');
+      if (sel) btn.setAttribute('href', '../booking.html?service=' + encodeURIComponent(sel.value));
+    }
+    radios.forEach(function (r) { r.addEventListener('change', sync); });
+    sync();
+  });
+
   /* ---- Back to Top ---- */
   var backToTop = document.getElementById("backToTop");
   if (backToTop) {

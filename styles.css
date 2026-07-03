@@ -795,6 +795,77 @@ html[lang="zh-CN"] .logo {
   margin-inline: auto;
 }
 
+.option-rows {
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+  margin-bottom: var(--space-md);
+}
+
+.opt-row {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+  padding: 0.9rem 1.1rem;
+  border: 1px solid rgba(184, 149, 107, 0.3);
+  border-radius: 8px;
+  background: var(--cream);
+  cursor: pointer;
+  transition: border-color 0.3s, background 0.3s, box-shadow 0.3s;
+}
+
+.opt-row:hover {
+  border-color: var(--gold);
+}
+
+.opt-row input[type="radio"] {
+  accent-color: #8a6a44;
+  width: 16px;
+  height: 16px;
+  flex-shrink: 0;
+}
+
+.opt-row .opt-duration {
+  font-size: 0.95rem;
+  font-weight: 500;
+  letter-spacing: 0.04em;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.opt-badge {
+  font-size: 0.62rem;
+  font-weight: 500;
+  letter-spacing: 0.08em;
+  color: var(--white);
+  background: var(--gold);
+  padding: 2px 8px;
+  border-radius: 2px;
+}
+
+.opt-row .opt-price {
+  margin-left: auto;
+  text-align: right;
+  font-weight: 500;
+  color: var(--gold);
+  white-space: nowrap;
+  line-height: 1.4;
+}
+
+.opt-row .opt-price small {
+  display: block;
+  font-size: 0.72rem;
+  font-weight: 300;
+  color: var(--charcoal-light);
+}
+
+.opt-row:has(input:checked) {
+  border-color: var(--gold);
+  background: rgba(184, 149, 107, 0.09);
+  box-shadow: inset 0 0 0 1px var(--gold);
+}
+
 .service-photo {
   margin: 0 0 var(--space-xl);
   border-radius: 12px;
