@@ -795,6 +795,11 @@ html[lang="zh-CN"] .logo {
   margin-inline: auto;
 }
 
+.includes strong {
+  font-weight: 700;
+  color: var(--charcoal);
+}
+
 .option-rows {
   display: flex;
   flex-direction: column;
